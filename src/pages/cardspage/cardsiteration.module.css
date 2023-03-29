@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.galleryOne{
+    padding-top: 50px;
+}
+.galleryImagesSection{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* .galleryImages img{
+    width: 315px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+}
+
+.galleryImages img:hover{
+   scale: 0.9;
+   transition:
+   1s ease-in-out;
+} */
+.viewBtn{
+    padding-top: 20px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+.viewBtn button{
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.galleryCards{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding: 50px;
+}
+
+.reachUs{
+    text-align: center;
+}
+
+
+.getIntouch{
+    text-align: center;
+}
+
+.inputField{
+    width: 520px;
+    height: 40px;
+}
+
+.formSection{
+    padding: 60px;
+}
+
+
+textarea{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .formContainer{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+.formGroup{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+.insideFormSection{
+        padding: 30px;
+        background-color: orange;
+    }
+    .formBtn{
+        text-align: center;
+    }
+    .formBtn button{
+        background-color: black;
+        padding: 10px 50px;
+        color: white;
+        border: none;
+    }
+
+    .formBtn button:hover{
+        background-color: white;
+        color: black;
+        transition: 0.3s ease-in-out;
+    }
+
+
+    @media screen and (max-width:428px){
+
+        .galleryImages img{
+            width: 100%
+        }
+        
+        .galleryImages{
+            padding: 100px 0px;
+        }
+
+        .galleryCards{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .formSection{
+            padding: 15px;
+        }
+        .insideFormSection{
+            padding: 20px;
+        }
+        .inputField{
+            width: 150px;
+            height: 30px;
+        }
+    }
+

@@ -1,0 +1,22 @@
+.galleryImages img {
+  width: 100%;
+}
+.galleryImages{
+    width: 315px;
+}
+.galleryImages img:hover {
+  /* scale: 0.9; */
+  transition: 1s ease-in-out;
+}
+@media screen and (max-width:428px){
+
+  /* .galleryImages img {
+    width: 100%;
+    object-fit: cover;
+
+  } */
+
+  .galleryImages{
+    width: 50%;
+}
+}

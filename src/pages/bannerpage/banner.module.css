@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.bannerMainContainerStyle{
+   margin-top: 0px;
+}
+
+.imgStyle{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+}
+.banner{
+    width: 100%;
+    height: 600px;
+    padding-top: 0px;
+}
+
+.upArrow{
+    float: right;
+    position: fixed;
+    right: 10px;
+    bottom: 0px;
+}
+.partOne{
+    padding-top: 50px;
+    text-align: center;
+}
+.aboutOne h1{
+    font-size: 50px;
+}
+
+.partTwo{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 60px 80px 100px 80px ;
+}
+.horse img{
+    width: 550px;
+}
+.horseText{
+    padding: 15px;
+    line-height: 25px;
+}
+
+@media screen and (max-width:428px){
+
+    .banner{
+        width: 100%;
+        height: 260PX;
+    }
+    .bannerMainContainerStyle{
+        padding-top: 80px;
+    }
+
+    .partOne{
+        padding: 10px;
+        text-align: center;
+    }
+
+    .partTwo{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding: 10px;
+    }
+
+    .horse img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .content{
+        padding: 10px;
+    }
+}
