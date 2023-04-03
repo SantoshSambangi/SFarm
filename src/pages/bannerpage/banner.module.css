@@ -24,6 +24,7 @@
     position: fixed;
     right: 10px;
     bottom: 0px;
+    scroll-behavior:smooth;
 }
 .partOne{
     padding-top: 50px;
@@ -31,6 +32,7 @@
 }
 .aboutOne h1{
     font-size: 50px;
+    font-family: "Exo-bold", sans-serif;
 }
 
 .partTwo{
@@ -45,8 +47,110 @@
 .horseText{
     padding: 15px;
     line-height: 25px;
+    font-family: "Exo-SemiBold", sans-serif;
+}
+.horseText p{
+    font-family: "Exo-light", sans-serif;
 }
 
+
+@media screen and (min-width:1440px){
+
+    .banner{
+        width: 100%;
+        height: 360PX;
+    }
+    .bannerMainContainerStyle{
+        padding-top: 0px;
+    }
+
+    .partOne{
+        padding: 10px;
+        text-align: center;
+    }
+
+
+    /* .partTwo{
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        padding: 10px;
+    } */
+
+    /* .horse img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    } */
+
+    .content{
+        padding: 10px;
+    }
+}
+@media screen and (max-width:1000px){
+
+    .banner{
+        width: 100%;
+        height: 360PX;
+    }
+    .bannerMainContainerStyle{
+        padding-top: 0px;
+    }
+
+    .partOne{
+        padding: 10px;
+        text-align: center;
+    }
+
+    .partTwo{
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        padding: 10px;
+    }
+
+    .horse img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .content{
+        padding: 10px;
+    }
+}
+@media screen and (max-width:768px){
+
+    .banner{
+        width: 100%;
+        height: 360PX;
+    }
+    .bannerMainContainerStyle{
+        padding-top: 0px;
+    }
+
+    .partOne{
+        padding: 10px;
+        text-align: center;
+    }
+
+    .partTwo{
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        padding: 10px;
+    }
+
+    .horse img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .content{
+        padding: 10px;
+    }
+}
 @media screen and (max-width:428px){
 
     .banner{
@@ -79,3 +183,5 @@
         padding: 10px;
     }
 }
+
+

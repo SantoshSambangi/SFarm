@@ -1,0 +1,107 @@
+.inputField {
+    width: 520px;
+    height: 40px;
+  }
+  
+  .formSection {
+    padding: 60px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* .formContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  } */
+  
+  .formFields{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .formContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .insideFormSection {
+    padding: 30px;
+    background-color: orange;
+  }
+  .formBtn {
+    text-align: center;
+  }
+  .formBtn button {
+    background-color: black;
+    padding: 10px 50px;
+    color: white;
+    border: none;
+  }
+  
+  .formBtn button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s ease-in-out;
+  }
+
+  insideForm{
+    display: flex;
+   
+  }
+  @media screen and (max-width:940px){
+
+    .formSection {
+      padding: 15px;
+      margin: 0px auto;
+    }
+    .insideFormSection {
+      padding: 20px;
+    }
+
+  }
+
+  @media screen and (max-width:768px){
+
+    .formSection {
+      padding: 15px;
+      margin: 0px auto;
+    }
+    .insideFormSection {
+      padding: 20px;
+    }
+
+  }
+
+  @media screen and (max-width:428px){
+
+    .formSection {
+        padding: 15px;
+      }
+      .insideFormSection {
+        padding: 20px;
+      }
+      /* .formContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      } */
+      /* .inputField {
+        width: 100%;
+      } */
+
+      .formFields{
+        display: flex;
+        flex-direction:column;
+        gap: 20px;
+      }
+
+
+  }
+
+  

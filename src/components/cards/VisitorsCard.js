@@ -1,15 +1,17 @@
 import React from "react";
-import styles from "../cards/backgroundcards.module.css";
-import classnames from "classnames";
+import styles from "../cards/visitorscard.module.css";
 
-const BackGroundCards = (props) => {
+const ContactBackGroundCards = (props) => {
   //console.log(props);
   return (
     <div className={styles.bgCardMainContainerStyle}>
       <div>{props.icon}</div>
       <h1 className={styles.numberBg}>{props.number}</h1>
       <div
-        className={[styles.cardContentWrapperStyle, props.cardContentWrapperStyle].join(" ")}
+        className={[
+          styles.cardContentWrapperStyle,
+          props.cardContentWrapperStyle,
+        ].join(" ")}
       >
         <div className={styles.cardContentInnerWrapperStyle}>
           <p className={styles.cardContentTextStyle}>{props.desc}</p>
@@ -19,4 +21,4 @@ const BackGroundCards = (props) => {
   );
 };
 
-export default BackGroundCards;
+export default ContactBackGroundCards;
