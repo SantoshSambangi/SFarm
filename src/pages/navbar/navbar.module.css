@@ -77,15 +77,18 @@
     z-index: 5;
     position: fixed;
   }
+  .mobileLinks a {
+    text-decoration: none;
+  }
 
   .mobileLinks li {
     padding: 20px 10px;
     list-style-type: none;
     color: white;
     font-size: 25px;
+    text-decoration: none;
   }
 }
-
 
 @media screen and (max-width: 768px) {
   .links {

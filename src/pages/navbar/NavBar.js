@@ -54,7 +54,10 @@ const NavBar = () => {
           >
             <li>CONTACT</li>
           </Link>
-          <Link to="/reserve" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+          <Link
+            to="/reserve"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
             <li>RESERVE</li>
           </Link>
         </ul>
@@ -67,43 +70,54 @@ const NavBar = () => {
       <ul className={toggle ? styles.links2 : styles.mobileLinks}>
         <Link
           to="/"
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            setToggle(true);
+          }}
         >
           <li>HOME</li>
         </Link>
         <Link
           to="/about"
-          onClick={() =>
+          onClick={() => {
             document
               .getElementById("about")
-              .scrollIntoView({ behavior: "smooth" })
-          }
+              .scrollIntoView({ behavior: "smooth" });
+            setToggle(true);
+          }}
         >
           <li>ABOUT</li>
         </Link>
         <Link
           to="/gallery"
-          onClick={() =>
+          onClick={() => {
             document
               .getElementById("gallery")
-              .scrollIntoView({ behavior: "smooth" })
-          }
+              .scrollIntoView({ behavior: "smooth" });
+            setToggle(true);
+          }}
         >
           <li>GALLERY</li>
         </Link>
 
         <Link
           to="/contact"
-          onClick={() =>
+          onClick={() => {
             document
               .getElementById("form")
-              .scrollIntoView({ behavior: "smooth" })
-          }
+              .scrollIntoView({ behavior: "smooth" });
+            setToggle(true);
+          }}
         >
           <li>CONTACT</li>
         </Link>
 
-        <Link to="/reserve">
+        <Link
+          to="/reserve"
+          onClick={() => {
+            setToggle(true);
+          }}
+        >
           <li>RESERVE</li>
         </Link>
       </ul>
