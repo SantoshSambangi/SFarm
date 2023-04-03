@@ -54,7 +54,7 @@ const NavBar = () => {
           >
             <li>CONTACT</li>
           </Link>
-          <Link to="/reserve">
+          <Link to="/reserve" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
             <li>RESERVE</li>
           </Link>
         </ul>
